@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1C1D1"
+    tools:context=".NewTaskActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/acme"
+        android:shadowColor="#2196F3"
+        android:text="Your Task"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/taskName"
+        android:layout_width="354dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:width="300dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Task Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/dueDate"
+        android:layout_width="355dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="36dp"
+        android:width="200dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Due Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/dueTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/taskName"
+        app:layout_constraintTop_toBottomOf="@+id/taskName" />
+
+    <EditText
+        android:id="@+id/dueTime"
+        android:layout_width="354dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="36dp"
+        android:width="100dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Due Time"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueDate" />
+
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="147dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="104dp"
+        android:background="#266829"
+        android:fontFamily="@font/acme"
+        android:onClick="onClick"
+        android:text="A d d"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
